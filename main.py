@@ -39,51 +39,6 @@ def download_file():
     converted_video_path = "static/blackandwhite.mp4"
     return send_file(converted_video_path, as_attachment=True)
 
-
-
-
-
-# Code for Project 265 Grayscale start here
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-            
-# Code for Project 265 end here
-
-    return render_template('upload.html', filename=filename)
-
-
-
-# Code for Project 265 download funcion starts here
-
-
-
-
-
-
-
-# Code for Project 265 download funcion ends here
-
-
-
 @app.route('/display/<filename>')
 def display_video(filename):
     return redirect(url_for('static', filename=filename))
